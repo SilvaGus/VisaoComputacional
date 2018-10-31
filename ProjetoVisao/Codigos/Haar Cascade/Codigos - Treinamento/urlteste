@@ -1,0 +1,9 @@
+import urllib.request
+import cv2
+import numpy as np
+import os
+
+x = urllib.request.urlopen('http://image-net.org/api/text/imagenet.synset.geturls?wnid=n07942152').read().decode()
+
+
+print (x.split("\n"))
